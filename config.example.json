@@ -1,0 +1,7 @@
+{
+  "gateway": "http://10.17.0.1:1000",
+  "username": "your_username",
+  "password": "your_password",
+  "targetSSID": "CollegeWiFi",
+  "checkIntervalSeconds": 150
+}

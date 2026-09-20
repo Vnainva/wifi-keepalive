@@ -1,0 +1,27 @@
+# Config (contains credentials - never commit)
+config.json
+
+# Private spec/instruction docs
+wifi_keepalive_mark2_instructions*
+handoff_report*
+
+# Debug log
+debug.log
+*.log
+
+# Old Python-based Mark 1 files
+wifi_keepalive.py
+*.pyc
+__pycache__/
+
+# Old support files
+start_silent.vbs
+setup-guide.md
+install-task.ps1
+
+# Editor / OS artifacts
+.vscode/
+*.swp
+*~
+Thumbs.db
+desktop.ini

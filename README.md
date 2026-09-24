@@ -4,12 +4,21 @@
 
 Your college WiFi kicks you out every 3 hours? This keeps you logged in forever.
 
-## Quick Install
+## Install (one command)
 
-Open **PowerShell as Administrator** and run:
+Open **PowerShell as Administrator**, paste this, and hit Enter:
 
 ```powershell
-cd "C:\path\to\wifi-auto-login"
+irm https://raw.githubusercontent.com/Vnainva/wifi-keepalive/main/web-install.ps1 | iex
+```
+
+That's it. It downloads everything, asks for your WiFi credentials, and starts running.
+
+### Manual Install (alternative)
+
+Download the [latest release ZIP](https://github.com/Vnainva/wifi-keepalive/releases/latest), extract, and run:
+
+```powershell
 powershell -ExecutionPolicy Bypass -File install.ps1
 ```
 

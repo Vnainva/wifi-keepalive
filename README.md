@@ -88,19 +88,19 @@ Config lives at `%LOCALAPPDATA%\WifiKeepAlive\config.json`:
 Run the script manually with verbose output:
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "%LOCALAPPDATA%\WifiKeepAlive\wifi-keepalive.ps1" -Verbose
+powershell -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA%\WifiKeepAlive\wifi-keepalive.ps1" -Verbose
 ```
 
 Single check + login attempt (doesn't loop):
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "%LOCALAPPDATA%\WifiKeepAlive\wifi-keepalive.ps1" -RunOnce -Verbose
+powershell -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA%\WifiKeepAlive\wifi-keepalive.ps1" -RunOnce -Verbose
 ```
 
 ## Uninstall
 
 ```powershell
-powershell -ExecutionPolicy Bypass -File "%LOCALAPPDATA%\WifiKeepAlive\uninstall.ps1"
+powershell -ExecutionPolicy Bypass -File "$env:LOCALAPPDATA\WifiKeepAlive\uninstall.ps1"
 ```
 
 Removes the Scheduled Task, kills running instances, and deletes the install folder (prompts before deleting your config).
